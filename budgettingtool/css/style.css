@@ -166,3 +166,35 @@ table{
 th{padding: 7px 7px;background-color:#7c7979}
 .table{width: 100%;}
 #deleterow{width: 15%;height: 100%;}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 768px) {
+
+    main {
+        grid-template-rows: 100px auto auto 90px;
+        grid-template-columns: 100%;
+        width:100%;
+        padding: 0px;
+    }
+
+    .income{
+        grid-column: 1; 
+        grid-row: 2;
+        padding: 25px;
+    }
+    .expenses{
+        grid-column: 1; 
+        grid-row: 3;
+        padding: 25px;
+    }
+
+    .intro {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .saldo {
+        grid-column: 1;
+        grid-row: 4;
+    }
+  }
