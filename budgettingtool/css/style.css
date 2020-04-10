@@ -196,5 +196,6 @@ th{padding: 7px 7px;background-color:#7c7979}
     .saldo {
         grid-column: 1;
         grid-row: 4;
+        margin: 25px;
     }
   }
