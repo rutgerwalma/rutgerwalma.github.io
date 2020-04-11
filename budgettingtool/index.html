@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <script src="js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/numbro@2.2.0/dist/numbro.min.js"></script>
+  <script src="js/scripts.js"></script>
   
 </head>
 
@@ -39,7 +39,7 @@
           </tr>
           <tr>
             <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);calculate();"></i><input type="text" id="label" placeholder="Beschrijving" class="leftinput" /></td>
-            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" /></td>
+            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" onkeypress="checkKeyCode(event)"/></td>
           </tr>
         </table>
         </div>
@@ -57,8 +57,8 @@
             <th class="tg-qs0d rightcell">Bedrag</th>
           </tr>
           <tr>
-            <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);"></i><input type="text" id="label" placeholder="Beschrijving" class="leftinput" /></td>
-            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" /></td>
+            <td class="tg-0lax leftcell"><i class="fa fa-trash-alt" id="delete-icon" onclick="deleteTableRow(this);calculate();"></i><input type="text" id="label" placeholder="Beschrijving" class="leftinput" /></td>
+            <td class="tg-0lax rightcell"><i class="fas fa-euro-sign" id="euro-icon"></i><input type="text" class="rightinput" onkeypress="checkKeyCode(event)" /></td>
           </tr>
         </table>
       </div>
